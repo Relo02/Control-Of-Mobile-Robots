@@ -1,0 +1,4 @@
+source;share/homework_1/local_setup.bash
+source;share/homework_1/local_setup.dsv
+source;share/homework_1/local_setup.sh
+source;share/homework_1/local_setup.zsh

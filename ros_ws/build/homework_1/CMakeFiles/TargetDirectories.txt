@@ -1,0 +1,10 @@
+/workspace/ros_ws/build/homework_1/CMakeFiles/uninstall.dir
+/workspace/ros_ws/build/homework_1/CMakeFiles/homework_1_uninstall.dir
+/workspace/ros_ws/build/homework_1/CMakeFiles/counter_node.dir
+/workspace/ros_ws/build/homework_1/CMakeFiles/test.dir
+/workspace/ros_ws/build/homework_1/CMakeFiles/edit_cache.dir
+/workspace/ros_ws/build/homework_1/CMakeFiles/rebuild_cache.dir
+/workspace/ros_ws/build/homework_1/CMakeFiles/list_install_components.dir
+/workspace/ros_ws/build/homework_1/CMakeFiles/install.dir
+/workspace/ros_ws/build/homework_1/CMakeFiles/install/local.dir
+/workspace/ros_ws/build/homework_1/CMakeFiles/install/strip.dir

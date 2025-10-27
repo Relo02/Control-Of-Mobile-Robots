@@ -1,0 +1,61 @@
+[0.000000] (-) TimerEvent: {}
+[0.000237] (homework_1) JobQueued: {'identifier': 'homework_1', 'dependencies': OrderedDict()}
+[0.000306] (homework_1) JobStarted: {'identifier': 'homework_1'}
+[0.010323] (homework_1) JobProgress: {'identifier': 'homework_1', 'progress': 'cmake'}
+[0.010875] (homework_1) Command: {'cmd': ['/usr/bin/cmake', '/workspace/ros_ws/src/homework_1', '-DCMAKE_INSTALL_PREFIX=/workspace/ros_ws/install/homework_1'], 'cwd': '/workspace/ros_ws/build/homework_1', 'env': OrderedDict([('HOSTNAME', '5643b242a421'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('PWD', '/workspace/ros_ws/build/homework_1'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1')]), 'shell': False}
+[0.099679] (-) TimerEvent: {}
+[0.169950] (homework_1) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.199800] (-) TimerEvent: {}
+[0.258308] (homework_1) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.266497] (homework_1) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.299936] (-) TimerEvent: {}
+[0.351257] (homework_1) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.357074] (homework_1) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.358528] (homework_1) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.359455] (homework_1) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.362998] (homework_1) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.400076] (-) TimerEvent: {}
+[0.445041] (homework_1) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.450236] (homework_1) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.450516] (homework_1) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.450684] (homework_1) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.454497] (homework_1) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.500155] (-) TimerEvent: {}
+[0.578204] (homework_1) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.600250] (-) TimerEvent: {}
+[0.653244] (homework_1) StdoutLine: {'line': b'-- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.689089] (homework_1) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.693180] (homework_1) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.699965] (homework_1) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.700295] (-) TimerEvent: {}
+[0.710360] (homework_1) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.723309] (homework_1) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.758440] (homework_1) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.760587] (homework_1) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.800383] (-) TimerEvent: {}
+[0.856513] (homework_1) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.888629] (homework_1) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.900544] (-) TimerEvent: {}
+[0.922481] (homework_1) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.931247] (homework_1) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.000689] (-) TimerEvent: {}
+[1.019176] (homework_1) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.020035] (homework_1) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.100846] (-) TimerEvent: {}
+[1.120539] (homework_1) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.121817] (homework_1) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.165474] (homework_1) StderrLine: {'line': b'\x1b[0mCMake Error: File /workspace/ros_ws/src/homework_1/package.xml does not exist.\x1b[0m\n'}
+[1.165650] (homework_1) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/stamp.cmake:24 (configure_file):\n'}
+[1.165710] (homework_1) StderrLine: {'line': b'  configure_file Problem configuring file\n'}
+[1.165750] (homework_1) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.165797] (homework_1) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:73 (stamp)\n'}
+[1.165847] (homework_1) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)\n'}
+[1.165880] (homework_1) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package.cmake:63 (ament_package_xml)\n'}
+[1.165914] (homework_1) StderrLine: {'line': b'  CMakeLists.txt:16 (ament_package)\n'}
+[1.165967] (homework_1) StderrLine: {'line': b'\n'}
+[1.166012] (homework_1) StderrLine: {'line': b'\x1b[0m\n'}
+[1.168076] (homework_1) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[1.168170] (homework_1) StdoutLine: {'line': b'See also "/workspace/ros_ws/build/homework_1/CMakeFiles/CMakeOutput.log".\n'}
+[1.173344] (homework_1) CommandEnded: {'returncode': 1}
+[1.173779] (homework_1) JobEnded: {'identifier': 'homework_1', 'rc': 1}
+[1.184643] (-) EventReactorShutdown: {}
