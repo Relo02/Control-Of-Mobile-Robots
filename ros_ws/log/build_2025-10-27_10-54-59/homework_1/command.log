@@ -1,2 +1,0 @@
-Invoking command in '/workspace/ros_ws/build/homework_1': /usr/bin/cmake --build /workspace/ros_ws/build/homework_1 -- -j20 -l20
-Invoked command in '/workspace/ros_ws/build/homework_1' returned '2': /usr/bin/cmake --build /workspace/ros_ws/build/homework_1 -- -j20 -l20

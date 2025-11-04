@@ -1,6 +1,0 @@
-
-/counter_node:
-  ros__parameters:
-    Ci: 0
-    Cf: 5
-
