@@ -1,31 +1,31 @@
+#pragma once
+
+#include <vector>
 #include <boost/numeric/odeint.hpp>
 
-using namespace boost::numeric::odeint;
+using state_type = std::vector<double>;
 
-typedef std::vector<double> state_type;
-
-// Simulation of the unyicycle robot model
-class ODESimulator {
-
+class ODESimulator
+{
 private:
-    // Simulator and integrator variables
-    double t, dt;
-    double Ta;
-    std::vector<double> u;
+    double t, dt, Ta;
     bool modelParams_set;
-
     state_type state;
-    runge_kutta_dopri5 < state_type > stepper; // Dormand-Prince 5th order method of Runge-Kutta type of integration
+    state_type u;
 
-    // ODE function
-    void simulator_ode(const state_type &state, state_type &dstate, double t);
+    boost::numeric::odeint::runge_kutta_dopri5<state_type> stepper;
+
+    void simulator_ode(const state_type &state,
+                       state_type &dstate,
+                       double t);
 
 public:
-    ODESimulator(double deltaT);
-    void setInitialState(std::vector<double> initial_state);
+    explicit ODESimulator(double deltaT);
+    void setInitialState(const state_type &initial_state);
     void setModelParams(double Ta, double dt);
+    void setInputValues(const state_type &u);
     void integrate();
-    void setInputValues(std::vector<double> u);
-    void getState(state_type &current_state) { current_state = state;};
-    void getTime(double &time) { time = t;};
+
+    void getState(state_type &current_state) const { current_state = state; }
+    void getTime(double &time) const { time = t; }
 };

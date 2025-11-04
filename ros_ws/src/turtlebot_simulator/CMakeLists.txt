@@ -1,56 +1,55 @@
 cmake_minimum_required(VERSION 3.8)
 project(turtlebot_simulator)
 
-# Require C++17
-set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
+# Default C++ standard
+if(NOT CMAKE_CXX_STANDARD)
+  set(CMAKE_CXX_STANDARD 17)
+endif()
 
-# Find required packages
+# Find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
-find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
-find_package(rcl_interfaces REQUIRED) # Crucial for rclcpp's dependencies
+find_package(nav_msgs REQUIRED)
+find_package(tf2 REQUIRED)
+find_package(tf2_ros REQUIRED)
+find_package(tf2_geometry_msgs REQUIRED)
 
-# Find Boost
-find_package(Boost REQUIRED COMPONENTS filesystem system)
+include_directories(include)
 
-# We combine all source files into a single executable based on the provided main()
-add_executable(main
-  src/main.cpp
-  src/cmd_vel_pub.cpp
+# ---- Robot Simulation Node ----
+add_executable(robot_sim_node
   src/robot_simulation.cpp
   src/odesimulator.cpp
 )
-
-# Define include directories for the compiler
-target_include_directories(main PUBLIC
-  # Local headers
-  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
-  $<INSTALL_INTERFACE:include>
-  # Crucial ROS 2 includes
-  ${rclcpp_INCLUDE_DIRS}
-  ${geometry_msgs_INCLUDE_DIRS}
-  ${rcl_interfaces_INCLUDE_DIRS}
+ament_target_dependencies(robot_sim_node
+  rclcpp
+  geometry_msgs
+  nav_msgs
+  tf2
+  tf2_ros
+  tf2_geometry_msgs
 )
 
-# ADDED: This handles ROS 2 linking and dependency setup correctly
-ament_target_dependencies(main rclcpp std_msgs geometry_msgs rcl_interfaces)
+# ---- Command Velocity Publisher Node ----
+add_executable(cmd_vel_pub_node
+  src/cmd_vel_pub.cpp
+)
+ament_target_dependencies(cmd_vel_pub_node
+  rclcpp
+  geometry_msgs
+)
 
-# Promote Boost includes to PUBLIC and link
-target_include_directories(main PUBLIC ${Boost_INCLUDE_DIRS})
-target_link_libraries(main ${Boost_LIBRARIES})
-
-
-# Install the single combined executable
-install(TARGETS main
+# ---- Install targets ----
+install(TARGETS
+  robot_sim_node
+  cmd_vel_pub_node
   DESTINATION lib/${PROJECT_NAME}
 )
 
-# Install headers (if any)
-install(DIRECTORY include/ DESTINATION include)
-
-# Install package manifest
-install(FILES package.xml DESTINATION share/${PROJECT_NAME})
+# include launch files
+install(DIRECTORY launch
+  DESTINATION share/${PROJECT_NAME}
+)
 
 ament_package()
