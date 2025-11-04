@@ -12,7 +12,7 @@ def generate_launch_description():
 
         DeclareLaunchArgument(
             'params_file',
-            default_value='/home/lorenzo/polimi/mobile_robots/Control-Of-Mobile-Robots/ros_ws/src/turtlebot_simulator/config/params.yaml', # Change this to your actual path
+            default_value='/home/lorenzo/polimi/mobile_robots/Control-Of-Mobile-Robots/ros_ws/src/turtlebot_simulator/config/params.yaml',
             description='Path to the ROS2 parameters YAML file'
         ),
         Node(
